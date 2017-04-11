@@ -1,5 +1,6 @@
 .metadata/
 .recommenders/
+/Servers
 **/target/
 **/.settings/
 **/.project
