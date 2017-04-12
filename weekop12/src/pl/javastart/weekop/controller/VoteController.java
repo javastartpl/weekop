@@ -31,7 +31,7 @@ public class VoteController extends HttpServlet {
             long discoveryId = Long.parseLong(request.getParameter("discovery_id"));
             updateVote(userId, discoveryId, voteType);
         }
-        response.sendRedirect("index.jsp");
+        response.sendRedirect(request.getContextPath() + "/");
     }
  
     private void updateVote(long userId, long discoveryId, VoteType voteType) {
