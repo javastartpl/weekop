@@ -29,7 +29,7 @@ public class RegisterController extends HttpServlet {
         String email = request.getParameter("inputEmail");
         UserService userService = new UserService();
         userService.addUser(username, email, password);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect(request.getContextPath() + "/");
     }
  
 }
